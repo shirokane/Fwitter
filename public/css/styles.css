@@ -1,0 +1,42 @@
+.jumbotron{
+  background-color:pink;
+}
+
+.user{
+  color:red;
+  font-size:42px;
+}
+
+.tweet{
+  font-size:22px;
+  color:blue;
+}
+
+.container{
+  background-color: white;
+  border-radius:15px;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+.message{
+  background-color:#D3D3D4;
+  border-radius:15px;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  padding-left:15px;
+  padding-right:15px;
+  word-wrap:break-word;
+}
+
+.field{
+  width:60%;
+  height:30px;
+  border-radius:5px;
+}
+
+.port{
+  float:left;
+  width:100px;
+}

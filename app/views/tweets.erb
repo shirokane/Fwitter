@@ -3,11 +3,26 @@
   <head>
     <title>Week 1</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
   </head>
   <body> 
-    <div class="container">
+    <div class="jumbotron">
 
+         <% @tweets.each do |tweet| %>
+         <div class="container">
+            <img class="port" src="http://shop.sweetstamps.com/images/fff-lace-flourish-letter.gif">
+            <h1 class="user"><%=tweet.user%></h1>
+          <div class="message">
+            <p class="tweet"><%=tweet.message%></p>
+          </div> 
+         </div>
+         <%end%>
 
+        <form action="/tweets" method="POST">
+        <center>user: <input type="text" name="user"></center><br>
+        <center><input type="text" name="message" class="field"></center><br><br>
+        <center><input type="submit"></center>
+        </form>
     </div>
   </body>
 </html>
